@@ -1,0 +1,36 @@
+div.a-continuous-flow-of-introductions {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+div.stanza {
+  line-height: 0.85;
+}
+
+div.top-margin {
+  margin-top: 28px;
+}
+
+p.one {
+  text-indent: 0.25in;
+}
+
+p.two {
+  text-indent: 0.5in;
+}
+
+p.three {
+  text-indent: 0.75in;
+}
+
+p.four {
+  text-indent: 1in;
+}
+
+/* #smiley {
+  position: absolute;
+  top: 189.71875px;
+  left: 241px;
+} */

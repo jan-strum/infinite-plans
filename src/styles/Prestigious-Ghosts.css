@@ -1,0 +1,8 @@
+div.Prestigious-ghosts {
+  width: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  line-height: 0.5;
+}

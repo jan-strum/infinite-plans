@@ -1,0 +1,18 @@
+div.infinite-plans {
+  width: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+/*
+#chattering {
+  position: absolute;
+  top: 148.5px;
+  bottom: 390px;
+} */
