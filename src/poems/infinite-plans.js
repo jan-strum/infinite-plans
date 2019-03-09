@@ -4,24 +4,11 @@ import { Link } from 'react-router-dom'
 export default class InfinitePlans extends React.Component {
   constructor(props) {
     super(props)
-    this.container = React.createRef()
   }
 
   handleClick = event => {
     const id = event.target.id
-    // console.log(event.target.id)
-    const source = document.querySelector(`#${id}`)
-    // console.log('source offsetTop', source.offsetTop)
-    const target = document.querySelector(`.ruler #${id}-target`)
-    // console.log('target offsetTop', target.offsetTop)
-
-    // const { x, y } = source.getBoundingClientRect()
-    // const sourceDimensions = { x, y }
-    // console.log('source dimensions', sourceDimensions)
-
-    const { x, y } = target.getBoundingClientRect()
-    const targetDimensions = { x, y }
-    console.log('target dimensions', targetDimensions)
+    console.log(event.target.id)
   }
 
   render() {
@@ -96,16 +83,14 @@ export default class InfinitePlans extends React.Component {
           </span>
         </p>
         <p>
-          <span
+          <Link
             className="link"
             to="/The-crowd-presses-me"
             id="chattering"
-            // style={{ textDecoration: 'none' }}
-            // ref={this.container}
             onClick={event => this.handleClick(event)}
           >
             I, chattering, animal,
-          </span>
+          </Link>
           <span className="hidden">
             spit purpoil—smiley to feel stupid Screaming the secrets of
             cuckolded singersss

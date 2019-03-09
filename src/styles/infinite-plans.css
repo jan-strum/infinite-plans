@@ -1,15 +1,28 @@
 div.infinite-plans {
-  width: 100vh;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+p {
+  white-space: nowrap;
+}
+
 .link {
   text-decoration: none;
   color: black;
 }
+
+#smiley {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* top: 168.3125; */
+  /* left: 241; */
+  /* transform: translate(100, 100); */
+}
+
 /*
 #chattering {
   position: absolute;
