@@ -4,15 +4,22 @@ import { Route, Switch, Redirect, withRouter } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import InfinitePlans from './poems/infinite-plans'
-import './styles/infinite-plans.css'
 import AContinuousFlowOfIntroductions from './poems/a-continuous-flow-of-introductions'
-import './styles/a-continuous-flow-of-introductions.css'
 import TheCrowdPressesMe from './poems/The-crowd-presses-me'
-import './styles/The-crowd-presses-me.css'
 import ILaughAtMyFierceGuest from './poems/I-laugh-at-my-fierce-guest'
-import './styles/I-laugh-at-my-fierce-guest.css'
 import PrestigiousGhosts from './poems/Prestigious-Ghosts'
-import './styles/Prestigious-Ghosts.css'
+import PictorialPreoccupations from './poems/Pictorial-preoccupations'
+import HuntersBehindCoulds from './poems/Hunters-behind-clouds'
+import TheBodyDelighted from './poems/The-body-delighted'
+import RegentOfInterregnum from './poems/Regent-of-Interregnum'
+import IAmTheInheritor from './poems/I-am-the-inheritor'
+import ParchedSpirits from './poems/Parched-spirits'
+import YouMustHaveRegard from './poems/You-must-have-regard'
+import ByItselfTime from './poems/By-itself-time'
+import ScudAngel from './poems/scud-angel'
+
+import './styles/infinite-plans.css'
+import './styles/sub-poems.css'
 
 const Container = ({ location }) => {
   return (
@@ -20,7 +27,7 @@ const Container = ({ location }) => {
       <TransitionGroup className="transition-group">
         <CSSTransition
           key={location.key}
-          timeout={{ enter: 600, exit: 600 }}
+          timeout={{ enter: 1300, exit: 1000 }}
           classNames="fade"
         >
           <section className="route-section">
@@ -44,6 +51,27 @@ const Container = ({ location }) => {
                 component={ILaughAtMyFierceGuest}
               />
               <Route path="/Prestigious-ghosts" component={PrestigiousGhosts} />
+              <Route
+                path="/Pictorial-preoccupations"
+                component={PictorialPreoccupations}
+              />
+              <Route
+                path="/Hunters-behind-clouds"
+                component={HuntersBehindCoulds}
+              />
+              <Route path="/The-body-delighted" component={TheBodyDelighted} />
+              <Route
+                path="/Regent-of-Interregnum"
+                component={RegentOfInterregnum}
+              />
+              <Route path="/I-am-the-inheritor" component={IAmTheInheritor} />
+              <Route path="/Parched-spirits" component={ParchedSpirits} />
+              <Route
+                path="/You-must-have-regard"
+                component={YouMustHaveRegard}
+              />
+              <Route path="/By-itself-time" component={ByItselfTime} />
+              <Route path="/scud-angel" component={ScudAngel} />
             </Switch>
           </section>
         </CSSTransition>
@@ -54,12 +82,15 @@ const Container = ({ location }) => {
 
 const Wrapper = styled.div`
   .fade-enter {
-    opacity: 0.01;
+    opacity: 0;
+    // font-weight: 0;
   }
 
   .fade-enter.fade-enter-active {
     opacity: 1;
-    transition: opacity 600ms ease-in;
+    transition: opacity 1300ms ease-in;
+    // font-weight: 450;
+    // transition: font-weight 1000ms ease-in;
   }
 
   .fade-exit {
@@ -68,18 +99,7 @@ const Wrapper = styled.div`
 
   .fade-exit.fade-exit-active {
     opacity: 0.01;
-    transition: opacity 600ms ease-in;
-  }
-
-  // div.transition-group {
-  //   position: relative;
-  // }
-
-  section.route-section {
-    // position: absolute;
-    // width: 100%;
-    // top: 0;
-    // left: 0;
+    transition: opacity 1000ms ease-out;
   }
 `
 

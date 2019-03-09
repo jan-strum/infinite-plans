@@ -1,0 +1,134 @@
+p.quarter {
+  text-indent: 0.25in;
+}
+p.half {
+  text-indent: 0.5in;
+}
+p.three-quarters {
+  text-indent: 0.75in;
+}
+p.one {
+  text-indent: 1in;
+}
+
+div.a-continuous-flow-of-introductions {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+div.a-continuous-flow-of-introductions > div.stanza {
+  line-height: 0.85;
+}
+div.a-continuous-flow-of-introductions > div.top-margin {
+  margin-top: 28px;
+}
+
+div.The-crowd-presses-me {
+  position: absolute;
+  width: 100vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.I-laugh-at-my-fierce-guest {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+div.Prestigious-ghosts {
+  position: absolute;
+  width: 100vh;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 0.5;
+}
+
+div.Pictorial-preoccupations {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 0.6;
+}
+
+div.Hunters-behind-clouds {
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  transform: translate(-6%, -10%);
+}
+
+div.The-body-delighted {
+  position: absolute;
+  left: 7%;
+  bottom: 20%;
+  transform: translateY(20%);
+  line-height: 0.6;
+}
+
+div.Regent-of-Interregnum {
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+  transform: translateY(20%);
+  line-height: 0.6;
+}
+
+div.I-am-the-inheritor {
+  position: absolute;
+  width: 485px;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
+
+div.Parched-spirits {
+  position: absolute;
+  left: 6%;
+  top: 18%;
+  transform: translate(-6%, -18%);
+  line-height: 0.8;
+}
+
+div.You-must-have-regard {
+  position: absolute;
+  width: 440px;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
+
+div.By-itself-time {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 100px;
+  row-gap: 20px;
+}
+div.By-itself-time > div.stanza {
+  line-height: 0.5;
+}
+
+div.scud-angel {
+  position: absolute;
+  right: 6%;
+  top: 20%;
+  transform: translateY(-20%);
+  text-align: right;
+  line-height: 1;
+}
+div.scud-angel > p.top-margin {
+  margin-top: 40px;
+}
