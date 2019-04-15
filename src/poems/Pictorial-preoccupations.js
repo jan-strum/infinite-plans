@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PictorialPreoccupations = () => {
   return (
-    <div className="Pictorial-preoccupations">
+    <Link className="Pictorial-preoccupations link none" to="/infinite-plans">
       <p>Pictorial preoccupations</p>
       <p>cannot explain</p>
       <p>other surrogates</p>
@@ -23,7 +24,7 @@ const PictorialPreoccupations = () => {
       <p>located four</p>
       <p>units down</p>
       <p>from the origin.</p>
-    </div>
+    </Link>
   )
 }
 

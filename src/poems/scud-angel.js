@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ScudAngel = () => {
   return (
-    <div className="scud-angel">
+    <Link className="scud-angel link none" to="/infinite-plans">
       <p>scud angel spit purpoil from churchly mother’s functionary</p>
       <p>
         ablution{' '}
@@ -62,7 +63,7 @@ const ScudAngel = () => {
         resurrection
         <span className="hidden">............................</span>
       </p>
-    </div>
+    </Link>
   )
 }
 

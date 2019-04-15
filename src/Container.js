@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import styled from 'styled-components'
 
 import InfinitePlans from './poems/infinite-plans'
 import AContinuousFlowOfIntroductions from './poems/a-continuous-flow-of-introductions'
@@ -18,8 +18,8 @@ import YouMustHaveRegard from './poems/You-must-have-regard'
 import ByItselfTime from './poems/By-itself-time'
 import ScudAngel from './poems/scud-angel'
 
-import './styles/infinite-plans.css'
-import './styles/sub-poems.css'
+import './poem-styles/infinite-plans.css'
+import './poem-styles/sub-poems.css'
 
 const Container = ({ location }) => {
   return (
@@ -27,7 +27,7 @@ const Container = ({ location }) => {
       <TransitionGroup className="transition-group">
         <CSSTransition
           key={location.key}
-          timeout={{ enter: 1300, exit: 1000 }}
+          timeout={{ enter: 5500, exit: 1500 }}
           classNames="fade"
         >
           <section className="route-section">
@@ -83,14 +83,14 @@ const Container = ({ location }) => {
 const Wrapper = styled.div`
   .fade-enter {
     opacity: 0;
-    // font-weight: 0;
   }
 
   .fade-enter.fade-enter-active {
     opacity: 1;
-    transition: opacity 1300ms ease-in;
-    // font-weight: 450;
-    // transition: font-weight 1000ms ease-in;
+    transition-property: opacity;
+    transition-delay: 2500ms;
+    transition-duration: 5500ms;
+    transition-function: ease-in;
   }
 
   .fade-exit {
@@ -98,9 +98,17 @@ const Wrapper = styled.div`
   }
 
   .fade-exit.fade-exit-active {
-    opacity: 0.01;
-    transition: opacity 1000ms ease-out;
+    opacity: 0;
+    transition: opacity 1500ms ease-out;
   }
+
+  p,
+  span {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+  }
+
+  width: 100%;
 `
 
 export default withRouter(Container)

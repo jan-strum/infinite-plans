@@ -11,103 +11,106 @@ p.one {
   text-indent: 1in;
 }
 
-div.a-continuous-flow-of-introductions {
+.a-continuous-flow-of-introductions {
   position: absolute;
   left: 5%;
   top: 50%;
   transform: translateY(-50%);
+  padding-right: 20%;
 }
-div.a-continuous-flow-of-introductions > div.stanza {
+.a-continuous-flow-of-introductions > div.stanza {
   line-height: 0.85;
 }
-div.a-continuous-flow-of-introductions > div.top-margin {
+.a-continuous-flow-of-introductions > div.top-margin {
   margin-top: 28px;
 }
 
-div.The-crowd-presses-me {
+.The-crowd-presses-me {
   position: absolute;
   width: 100vh;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  padding: 10% 10% 10% 10%;
+  /* cursor: none; */
 }
+/* .The-crowd-presses-me:hover {
+  cursor: pointer;
+} */
 
-div.I-laugh-at-my-fierce-guest {
+.I-laugh-at-my-fierce-guest {
   position: absolute;
-  left: 5%;
   top: 50%;
   transform: translateY(-50%);
+  padding: 20% 20% 20% 5%;
 }
 
-div.Prestigious-ghosts {
+.Prestigious-ghosts {
   position: absolute;
-  width: 100vh;
-  left: 5%;
   top: 50%;
   transform: translateY(-50%);
+  padding: 10% 20% 10% 5%;
   line-height: 0.5;
 }
 
-div.Pictorial-preoccupations {
+.Pictorial-preoccupations {
   position: absolute;
-  left: 5%;
   top: 50%;
   transform: translateY(-50%);
+  padding: 10% 60% 10% 5%;
   line-height: 0.6;
 }
 
-div.Hunters-behind-clouds {
+.Hunters-behind-clouds {
   position: absolute;
-  left: 6%;
-  top: 10%;
-  transform: translate(-6%, -10%);
+  padding: 5% 30% 30% 5%;
 }
 
-div.The-body-delighted {
+.The-body-delighted {
   position: absolute;
-  left: 7%;
-  bottom: 20%;
+  bottom: 0%;
+  padding: 20% 20% 5% 6%;
+  line-height: 0.6;
+}
+
+.Regent-of-Interregnum {
+  position: absolute;
+  bottom: 10%;
   transform: translateY(20%);
+  padding: 20% 20% 7% 5%;
   line-height: 0.6;
 }
 
-div.Regent-of-Interregnum {
-  position: absolute;
-  left: 10%;
-  bottom: 20%;
-  transform: translateY(20%);
-  line-height: 0.6;
-}
-
-div.I-am-the-inheritor {
+.I-am-the-inheritor {
   position: absolute;
   width: 485px;
-  height: auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: justify;
+  padding: 20%;
 }
 
-div.Parched-spirits {
+.Parched-spirits {
   position: absolute;
-  left: 6%;
-  top: 18%;
-  transform: translate(-6%, -18%);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5% 70% 5% 5%;
   line-height: 0.8;
 }
 
-div.You-must-have-regard {
+.You-must-have-regard {
   position: absolute;
   width: 440px;
   height: auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  padding: 20%;
   text-align: justify;
 }
 
-div.By-itself-time {
+.By-itself-time {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -116,19 +119,19 @@ div.By-itself-time {
   grid-template-columns: auto auto;
   column-gap: 100px;
   row-gap: 20px;
+  padding: 5%;
 }
-div.By-itself-time > div.stanza {
+.By-itself-time > div.stanza {
   line-height: 0.5;
 }
 
-div.scud-angel {
+.scud-angel {
   position: absolute;
-  right: 6%;
-  top: 20%;
-  transform: translateY(-20%);
+  right: 0%;
+  padding: 4% 6% 6% 30%;
   text-align: right;
   line-height: 1;
 }
-div.scud-angel > p.top-margin {
+.scud-angel > p.top-margin {
   margin-top: 40px;
 }

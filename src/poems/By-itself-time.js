@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ByItselfTime = () => {
   return (
-    <div className="By-itself-time">
+    <Link className="By-itself-time link none" to="/infinite-plans">
       <div className="stanza">
         <p>By itself, time</p>
         <p>cannot conceive</p>
@@ -27,7 +28,7 @@ const ByItselfTime = () => {
         <p>is thought-sick at the act:</p>
         <p>have you eyes without feeling?</p>
       </div>
-    </div>
+    </Link>
   )
 }
 

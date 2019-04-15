@@ -1,8 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const AContinuousFlowOfIntroductions = () => {
   return (
-    <div className="a-continuous-flow-of-introductions">
+    <Link
+      className="a-continuous-flow-of-introductions link none"
+      to="/infinite-plans"
+    >
       <div className="stanza">
         <p className="quarter">a continuous flow of introductions—</p>
         <p className="half">the intoning children of the evicted</p>
@@ -41,7 +45,7 @@ const AContinuousFlowOfIntroductions = () => {
         <p className="three-quarters">But now-insipid others wait for us,</p>
         <p className="one">and we’ll do it for free.</p>
       </div>
-    </div>
+    </Link>
   )
 }
 

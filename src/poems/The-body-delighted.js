@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TheBodyDelighted = () => {
   return (
-    <div className="The-body-delighted">
+    <Link className="The-body-delighted link none" to="infinite-plans">
       <p>The body, delighted by being unlocatable, exhaling</p>
       <p className="half">
         {' '}
@@ -34,7 +35,7 @@ const TheBodyDelighted = () => {
       <p>
         Myth-sized life folds into doctrine, laid on the bed of sebum silks.
       </p>
-    </div>
+    </Link>
   )
 }
 

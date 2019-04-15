@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const RegentOfInterregnum = () => {
   return (
-    <div className="Regent-of-Interregnum">
+    <Link className="Regent-of-Interregnum link none" to="/infinite-plans">
       <p>Regent of Interregnum addresses samely disparate hands.</p>
       <p>They point to supermarkets full of fruit and nuts</p>
       <p>and glass cases labeled Positive Evidence,</p>
@@ -14,7 +15,7 @@ const RegentOfInterregnum = () => {
       <p>Its slow thighs almost dance.</p>
       <br />
       <p>An extravagant crowning excuse besieges little life.</p>
-    </div>
+    </Link>
   )
 }
 

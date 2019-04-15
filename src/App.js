@@ -1,19 +1,55 @@
 import React from 'react'
-import styled from 'styled-components'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import { BrowserRouter as Router } from 'react-router-dom'
-import './App.css'
+import Fullscreen from 'react-full-screen'
 
 import Container from './Container'
 
-const App = () => {
-  return (
-    <div className="App">
-      <Router>
-        <Container />
-      </Router>
-    </div>
-  )
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      isFull: false,
+      button: 'hide',
+      cursor: 'none'
+    }
+  }
+
+  goFull = () => {
+    this.setState({ isFull: true })
+  }
+  cursor = () => {
+    this.setState({ button: 'show', cursor: 'default' })
+    // clearTimeout(hide)
+    setTimeout(() => this.setState({ button: 'hide', cursor: 'none' }), 1000)
+    // setTimeout(() => this.setState({ cursor: 'none' }), 500)
+  }
+  hideCursor = () => {
+    console.log('hide cursor')
+    this.setState({ cursor: 'none' })
+  }
+
+  render() {
+    return (
+      <div
+        id={this.state.cursor}
+        className={`App ${this.state.cursor}`}
+        onMouseMove={this.cursor}
+        onClick={this.hideCursor}
+      >
+        <div id="button" className={this.state.button} onClick={this.goFull}>
+          {'< >'}
+        </div>
+        <Router>
+          <Fullscreen
+            enabled={this.state.isFull}
+            onChange={isFull => this.setState({ isFull })}
+          >
+            <Container />
+          </Fullscreen>
+        </Router>
+      </div>
+    )
+  }
 }
 
 export default App

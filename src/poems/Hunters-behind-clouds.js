@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const HuntersBehindClouds = () => {
   return (
-    <div className="Hunters-behind-clouds">
+    <Link className="Hunters-behind-clouds link none" to="infinite-plans">
       <p>Hunters behind clouds</p>
       <p>track unknown fevers</p>
       <p>
@@ -15,7 +16,7 @@ const HuntersBehindClouds = () => {
         <span className="hidden">they </span>make it up to the body
       </p>
       <p>by conjoining one and their.</p>
-    </div>
+    </Link>
   )
 }
 

@@ -4,11 +4,15 @@ import { Link } from 'react-router-dom'
 export default class InfinitePlans extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      cursor: 'pointer'
+    }
   }
 
   handleClick = event => {
     const id = event.target.id
     console.log(event.target.id)
+    this.setState({ cursor: 'none' })
   }
 
   render() {
@@ -23,7 +27,7 @@ export default class InfinitePlans extends React.Component {
             id="thunders"
             className="link"
             to="/By-itself-time"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             thunders in the index
           </Link>
@@ -37,7 +41,7 @@ export default class InfinitePlans extends React.Component {
             id="crust"
             className="link"
             to="/Parched-spirits"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             crust of thinghood
           </Link>
@@ -51,7 +55,7 @@ export default class InfinitePlans extends React.Component {
             id="myth"
             className="link"
             to="/The-body-delighted"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             Myth-sized
           </Link>
@@ -64,7 +68,7 @@ export default class InfinitePlans extends React.Component {
             id="screaming"
             className="link"
             to="I-am-the-inheritor"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             Screaming the secrets of immobile life
           </Link>
@@ -77,7 +81,7 @@ export default class InfinitePlans extends React.Component {
             id="feel-stupid"
             className="link"
             to="/Prestigious-ghosts"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             feel stupid
           </Link>
@@ -86,7 +90,7 @@ export default class InfinitePlans extends React.Component {
             id="cuckolded"
             className="link"
             to="/Prestigious-ghosts"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             cuckolded singers
           </Link>
@@ -97,7 +101,7 @@ export default class InfinitePlans extends React.Component {
             id="smiley"
             className="link"
             to="/a-continuous-flow-of-introductions"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             —smiley to know the taste{' '}
           </Link>
@@ -108,7 +112,7 @@ export default class InfinitePlans extends React.Component {
             id="cannot-explain"
             className="link"
             to="/Pictorial-preoccupations"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             cannot explain
           </Link>
@@ -119,7 +123,7 @@ export default class InfinitePlans extends React.Component {
             id="spit-purpoil"
             className="link"
             to="scud-angel"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             spit purpoil
           </Link>
@@ -130,7 +134,7 @@ export default class InfinitePlans extends React.Component {
             id="otherother-surrogates"
             className="link"
             to="/Pictorial-preoccupations"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             other surrogates
           </Link>
@@ -138,9 +142,10 @@ export default class InfinitePlans extends React.Component {
         <p>
           <Link
             id="chattering"
-            className="link"
+            className={`link ${this.state.cursor}`}
             to="/The-crowd-presses-me"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
+            onClick={this.handleClick}
           >
             I, chattering, animal,
           </Link>
@@ -152,7 +157,7 @@ export default class InfinitePlans extends React.Component {
             id="for-celibacy"
             className="link"
             to="/Pictorial-preoccupations"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             for celibacy
           </Link>
@@ -163,7 +168,7 @@ export default class InfinitePlans extends React.Component {
             id="laugh-at"
             className="link"
             to="/I-laugh-at-my-fierce-guest"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             laugh at my fierce guest
           </Link>
@@ -174,7 +179,7 @@ export default class InfinitePlans extends React.Component {
             id="slow-thighs"
             className="link"
             to="/Regent-of-Interregnum"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             slow thighs almost dance guest
           </Link>
@@ -187,7 +192,7 @@ export default class InfinitePlans extends React.Component {
             id="would-prefer"
             className="link"
             to="/Hunters-behind-clouds"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             would prefer to kill
           </Link>
@@ -200,7 +205,7 @@ export default class InfinitePlans extends React.Component {
             id="than-to-torment"
             className="link"
             to="/Hunters-behind-clouds"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             than to torment
           </Link>
@@ -213,7 +218,7 @@ export default class InfinitePlans extends React.Component {
             id="appease"
             className="link"
             to="/You-must-have-regard"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             appease all of your needs at once;
           </Link>
@@ -224,7 +229,7 @@ export default class InfinitePlans extends React.Component {
             id="you-are-not-allowed"
             className="link"
             to="/You-must-have-regard"
-            onClick={event => this.handleClick(event)}
+            onClick={this.handleClick}
           >
             you are not allowed to reach out for them
           </Link>

@@ -1,12 +1,9 @@
-div.infinite-plans {
-  width: 100vh;
+.infinite-plans {
   position: absolute;
+  padding: 10% 10%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-div.infinite-plans p {
   white-space: nowrap;
 }
 

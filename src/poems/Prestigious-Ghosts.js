@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PrestigiousGhosts = () => {
   return (
-    <div className="Prestigious-ghosts">
+    <Link className="Prestigious-ghosts link none" to="/infinite-plans">
       <p>
         Prestigious ghosts. Partisans of a certain future. Its cheap products,
       </p>
@@ -50,7 +51,7 @@ const PrestigiousGhosts = () => {
       </p>
       <br />
       <p>Little will: your ellipses are my braces.</p>
-    </div>
+    </Link>
   )
 }
 
