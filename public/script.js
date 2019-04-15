@@ -1,58 +1,41 @@
-// window.addEventListener('mousemove', function() {
-// const body = document.getElementsByTagName('BODY')[0]
-// console.log('body', body.style.cursor)
+let timeout
 
-// const html = document.getElementsByTagName('html')
-// console.log('html', html)
-// html.style.cursor = 'default'
-// console.log
+document.addEventListener('mousemove', hideOnIdle)
 
-// setTimeout(() => (body.style.cursor = 'none'), 1000)
-// console.log('body', body.style)
-// setTimeout((body.style.cursor = 'none'), 1000)
-// })
+function hideOnIdle() {
+  const body = document.getElementsByTagName('body')[0]
+  const button = document.getElementById('button')
+
+  body.style.cursor = 'default'
+  button.className = 'display'
+
+  clearTimeout(timeout)
+
+  timeout = setTimeout(function() {
+    body.style.cursor = 'none'
+    button.className = 'hide'
+  }, 1000)
+
+  body.style.cursor = 'default'
+  button.className = 'display'
+}
 
 // var timeout
 // var isHidden = false
 
-// document.addEventListener('mousemove', magicMouse)
+// document.addEventListener('mousemove', hideOnIdle)
 
-// function magicMouse() {
+// function hideOnIdle() {
+//   const body = document.getElementsByTagName('body')[0]
+//   body.style.cursor = 'default'
 //   if (timeout) {
 //     clearTimeout(timeout)
 //   }
 //   timeout = setTimeout(function() {
-//     if (!isHidden) {
-//       document.querySelector('body').style.cursor = 'none'
-//       isHidden = true
-//     }
+//     body.style.cursor = 'none'
 //   }, 1000)
 //   if (isHidden) {
-//     document.querySelector('body').style.cursor = 'auto'
+//     body.style.cursor = 'default'
 //     isHidden = false
 //   }
 // }
-
-// ;(function() {
-//   var mouseTimer = null,
-//     cursorVisible = true
-
-//   function disappearCursor() {
-//     mouseTimer = null
-//     document.body.style.cursor = 'none'
-//     cursorVisible = false
-//   }
-
-//   document.onmousemove = function() {
-//     if (mouseTimer) {
-//       window.clearTimeout(mouseTimer)
-//     }
-//     if (!cursorVisible) {
-//       document.body.style.cursor = 'default'
-//       cursorVisible = true
-//     }
-//     mouseTimer = window.setTimeout(disappearCursor, 5000)
-//   }
-// })()
-
-// $('html').autoHideMouseCursor(1000)
