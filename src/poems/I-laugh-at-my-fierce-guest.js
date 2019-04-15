@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ILaughAtMyFierceGuest = () => {
   return (
-    <div className="I-laugh-at-my-fierce-guest">
+    <Link className="I-laugh-at-my-fierce-guest link none" to="infinite-plans">
       <p>
         I laugh at my fierce guest. He squints around modestly, as if on a
         stranger's property.
@@ -16,7 +17,7 @@ const ILaughAtMyFierceGuest = () => {
         permanent war machine:
       </p>
       <p>the tremendous precision instrument of civilization.</p>
-    </div>
+    </Link>
   )
 }
 

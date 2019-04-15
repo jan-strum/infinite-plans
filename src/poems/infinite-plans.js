@@ -4,24 +4,15 @@ import { Link } from 'react-router-dom'
 export default class InfinitePlans extends React.Component {
   constructor(props) {
     super(props)
-    this.container = React.createRef()
+    this.state = {
+      cursor: 'pointer'
+    }
   }
 
   handleClick = event => {
     const id = event.target.id
-    // console.log(event.target.id)
-    const source = document.querySelector(`#${id}`)
-    // console.log('source offsetTop', source.offsetTop)
-    const target = document.querySelector(`.ruler #${id}-target`)
-    // console.log('target offsetTop', target.offsetTop)
-
-    // const { x, y } = source.getBoundingClientRect()
-    // const sourceDimensions = { x, y }
-    // console.log('source dimensions', sourceDimensions)
-
-    const { x, y } = target.getBoundingClientRect()
-    const targetDimensions = { x, y }
-    console.log('target dimensions', targetDimensions)
+    console.log(event.target.id)
+    this.setState({ cursor: 'none' })
   }
 
   render() {
@@ -32,132 +23,216 @@ export default class InfinitePlans extends React.Component {
             I, chattering animal, spit purpoil—smiley to feel stupid Screaming
             the secrets of Myth-sized crust of thinghood{' '}
           </span>
-          <span id="thunders" onClick={event => this.handleClick(event)}>
+          <Link
+            id="thunders"
+            className="link"
+            to="/By-itself-time"
+            onClick={this.handleClick}
+          >
             thunders in the index
-          </span>
+          </Link>
         </p>
         <p>
           <span className="hidden">
             I, chattering animal, spit purpoil—smiley to feel stupid Screaming
             the secrets of Myth-sized{' '}
           </span>
-          <span id="crust" onClick={event => this.handleClick(event)}>
+          <Link
+            id="crust"
+            className="link"
+            to="/Parched-spirits"
+            onClick={this.handleClick}
+          >
             crust of thinghood
-          </span>
+          </Link>
         </p>
         <p>
           <span className="hidden">
             I, chattering animal, spit purpoil—smiley to feel stupid Screaming
             the secrets of{' '}
           </span>
-          <span id="myth" onClick={event => this.handleClick(event)}>
+          <Link
+            id="myth"
+            className="link"
+            to="/The-body-delighted"
+            onClick={this.handleClick}
+          >
             Myth-sized
-          </span>
+          </Link>
         </p>
         <p>
           <span className="hidden">
             I, chattering animal, spit purpoil—smiley to feel stupid{' '}
           </span>
-          <span id="screaming" onClick={event => this.handleClick(event)}>
+          <Link
+            id="screaming"
+            className="link"
+            to="I-am-the-inheritor"
+            onClick={this.handleClick}
+          >
             Screaming the secrets of immobile life
-          </span>
+          </Link>
         </p>
         <p>
           <span className="hidden">
-            I, chattering animal, spit purpoil—smiley to{' '}
+            I, chattering animal, spit purpoil—smiley to{'..'}
           </span>
-          feel stupid <span className="hidden">Screaming the secrets of </span>
-          <span id="cuckolded" onClick={event => this.handleClick(event)}>
+          <Link
+            id="feel-stupid"
+            className="link"
+            to="/Prestigious-ghosts"
+            onClick={this.handleClick}
+          >
+            feel stupid
+          </Link>
+          <span className="hidden">Screaming the secrets of </span>
+          <Link
+            id="cuckolded"
+            className="link"
+            to="/Prestigious-ghosts"
+            onClick={this.handleClick}
+          >
             cuckolded singers
-          </span>
+          </Link>
         </p>
         <p>
           <span className="hidden">I, chattering animal, spit purpoil </span>
-          <span id="smiley" onClick={event => this.handleClick(event)}>
+          <Link
+            id="smiley"
+            className="link"
+            to="/a-continuous-flow-of-introductions"
+            onClick={this.handleClick}
+          >
             —smiley to know the taste{' '}
-          </span>
+          </Link>
           <span className="hidden">
             eaming the secrets of cuckolded singers
           </span>
-          <span id="cannot-explain" onClick={event => this.handleClick(event)}>
+          <Link
+            id="cannot-explain"
+            className="link"
+            to="/Pictorial-preoccupations"
+            onClick={this.handleClick}
+          >
             cannot explain
-          </span>
+          </Link>
         </p>
         <p>
-          <span className="hidden">I, chattering animal, </span>spit purpoil
+          <span className="hidden">I, chattering animal, </span>
+          <Link
+            id="spit-purpoil"
+            className="link"
+            to="scud-angel"
+            onClick={this.handleClick}
+          >
+            spit purpoil
+          </Link>
           <span className="hidden">
             —smiley to feel stupid Screaming the secrets of cuckolded singersss
           </span>
-          <span
+          <Link
             id="otherother-surrogates"
-            onClick={event => this.handleClick(event)}
+            className="link"
+            to="/Pictorial-preoccupations"
+            onClick={this.handleClick}
           >
             other surrogates
-          </span>
+          </Link>
         </p>
         <p>
-          <span
-            className="link"
-            to="/The-crowd-presses-me"
+          <Link
             id="chattering"
-            // style={{ textDecoration: 'none' }}
-            // ref={this.container}
-            onClick={event => this.handleClick(event)}
+            className={`link ${this.state.cursor}`}
+            to="/The-crowd-presses-me"
+            onClick={this.handleClick}
+            onClick={this.handleClick}
           >
             I, chattering, animal,
-          </span>
+          </Link>
           <span className="hidden">
             spit purpoil—smiley to feel stupid Screaming the secrets of
             cuckolded singersss
           </span>
-          <span id="for-celibacy" onClick={event => this.handleClick(event)}>
+          <Link
+            id="for-celibacy"
+            className="link"
+            to="/Pictorial-preoccupations"
+            onClick={this.handleClick}
+          >
             for celibacy
-          </span>
+          </Link>
         </p>
         <p>
           <span className="hidden">I, chattering animal, </span>
-          <span id="laugh-at" onClick={event => this.handleClick(event)}>
+          <Link
+            id="laugh-at"
+            className="link"
+            to="/I-laugh-at-my-fierce-guest"
+            onClick={this.handleClick}
+          >
             laugh at my fierce guest
-          </span>
+          </Link>
         </p>
         <p>
           <span className="hidden">I, chattering animal, laugh at my</span>
-          <span id="slow-thighs" onClick={event => this.handleClick(event)}>
+          <Link
+            id="slow-thighs"
+            className="link"
+            to="/Regent-of-Interregnum"
+            onClick={this.handleClick}
+          >
             slow thighs almost dance guest
-          </span>
+          </Link>
         </p>
         <p>
           <span className="hidden">
             I, chattering animal, laugh at my fierce guest
           </span>
-          <span id="would-prefer" onClick={event => this.handleClick(event)}>
+          <Link
+            id="would-prefer"
+            className="link"
+            to="/Hunters-behind-clouds"
+            onClick={this.handleClick}
+          >
             would prefer to kill
-          </span>
+          </Link>
         </p>
         <p>
           <span className="hidden">
             I, chattering animal, laugh at my slow th
           </span>
-          <span id="than-to-torment" onClick={event => this.handleClick(event)}>
+          <Link
+            id="than-to-torment"
+            className="link"
+            to="/Hunters-behind-clouds"
+            onClick={this.handleClick}
+          >
             than to torment
-          </span>
+          </Link>
         </p>
         <p>
           <span className="hidden">
             I, chattering animal, laugh at my slow thighs would{' '}
           </span>
-          <span id="appease" onClick={event => this.handleClick(event)}>
+          <Link
+            id="appease"
+            className="link"
+            to="/You-must-have-regard"
+            onClick={this.handleClick}
+          >
             appease all of your needs at once;
-          </span>
+          </Link>
         </p>
         <p>
           <span className="hidden">I, chatterin</span>
-          <span
+          <Link
             id="you-are-not-allowed"
-            onClick={event => this.handleClick(event)}
+            className="link"
+            to="/You-must-have-regard"
+            onClick={this.handleClick}
           >
             you are not allowed to reach out for them
-          </span>
+          </Link>
         </p>
       </div>
     )

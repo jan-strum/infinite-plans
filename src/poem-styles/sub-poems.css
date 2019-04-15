@@ -1,0 +1,137 @@
+p.quarter {
+  text-indent: 0.25in;
+}
+p.half {
+  text-indent: 0.5in;
+}
+p.three-quarters {
+  text-indent: 0.75in;
+}
+p.one {
+  text-indent: 1in;
+}
+
+.a-continuous-flow-of-introductions {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 20%;
+}
+.a-continuous-flow-of-introductions > div.stanza {
+  line-height: 0.85;
+}
+.a-continuous-flow-of-introductions > div.top-margin {
+  margin-top: 28px;
+}
+
+.The-crowd-presses-me {
+  position: absolute;
+  width: 100vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10% 10% 10% 10%;
+  /* cursor: none; */
+}
+/* .The-crowd-presses-me:hover {
+  cursor: pointer;
+} */
+
+.I-laugh-at-my-fierce-guest {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20% 20% 20% 5%;
+}
+
+.Prestigious-ghosts {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10% 20% 10% 5%;
+  line-height: 0.5;
+}
+
+.Pictorial-preoccupations {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10% 60% 10% 5%;
+  line-height: 0.6;
+}
+
+.Hunters-behind-clouds {
+  position: absolute;
+  padding: 5% 30% 30% 5%;
+}
+
+.The-body-delighted {
+  position: absolute;
+  bottom: 0%;
+  padding: 20% 20% 5% 6%;
+  line-height: 0.6;
+}
+
+.Regent-of-Interregnum {
+  position: absolute;
+  bottom: 10%;
+  transform: translateY(20%);
+  padding: 20% 20% 7% 5%;
+  line-height: 0.6;
+}
+
+.I-am-the-inheritor {
+  position: absolute;
+  width: 485px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  padding: 20%;
+}
+
+.Parched-spirits {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5% 70% 5% 5%;
+  line-height: 0.8;
+}
+
+.You-must-have-regard {
+  position: absolute;
+  width: 440px;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20%;
+  text-align: justify;
+}
+
+.By-itself-time {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 100px;
+  row-gap: 20px;
+  padding: 5%;
+}
+.By-itself-time > div.stanza {
+  line-height: 0.5;
+}
+
+.scud-angel {
+  position: absolute;
+  right: 0%;
+  padding: 4% 6% 6% 30%;
+  text-align: right;
+  line-height: 1;
+}
+.scud-angel > p.top-margin {
+  margin-top: 40px;
+}

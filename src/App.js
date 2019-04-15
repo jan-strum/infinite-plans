@@ -1,56 +1,55 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
-import './App.css'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Fullscreen from 'react-full-screen'
 
-import InfinitePlans from './poems/infinite-plans'
-import './styles/infinite-plans.css'
-import AContinuousFlowOfIntroductions from './poems/a-continuous-flow-of-introductions'
-import './styles/a-continuous-flow-of-introductions.css'
-import TheCrowdPressesMe from './poems/The-crowd-presses-me'
-import './styles/The-crowd-presses-me.css'
-import ILaughAtMyFierceGuest from './poems/I-laugh-at-my-fierce-guest'
-import './styles/I-laugh-at-my-fierce-guest.css'
-import PrestigiousGhosts from './poems/Prestigious-Ghosts'
-import './styles/Prestigious-Ghosts.css'
+import Container from './Container'
 
-const Ruler = () => {
-  return (
-    <div className="ruler">
-      {/* <InfinitePlans /> */}
-      <AContinuousFlowOfIntroductions />
-      <TheCrowdPressesMe />
-      <ILaughAtMyFierceGuest />
-      <PrestigiousGhosts />
-    </div>
-  )
-}
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      isFull: false,
+      button: 'hide',
+      cursor: 'none'
+    }
+  }
 
-const App = () => {
-  return (
-    <div className="App">
-      <Router>
-        <div>
-          <Route
-            exact
-            path="/"
-            render={() => <Redirect to="/infinite-plans" />}
-          />
-          <Route path="/infinite-plans" component={InfinitePlans} />
-          <Route
-            path="/a-continuous-flow-of-introductions"
-            component={AContinuousFlowOfIntroductions}
-          />
-          <Route path="/The-crowd-presses-me" component={TheCrowdPressesMe} />
-          <Route
-            path="/I-laugh-at-my-fierce-guest"
-            component={ILaughAtMyFierceGuest}
-          />
-          <Route path="/Prestigious-ghosts" component={PrestigiousGhosts} />
+  goFull = () => {
+    this.setState({ isFull: true })
+  }
+  cursor = () => {
+    this.setState({ button: 'show', cursor: 'default' })
+    // clearTimeout(hide)
+    setTimeout(() => this.setState({ button: 'hide', cursor: 'none' }), 1000)
+    // setTimeout(() => this.setState({ cursor: 'none' }), 500)
+  }
+  hideCursor = () => {
+    console.log('hide cursor')
+    this.setState({ cursor: 'none' })
+  }
+
+  render() {
+    return (
+      <div
+        id={this.state.cursor}
+        className={`App ${this.state.cursor}`}
+        onMouseMove={this.cursor}
+        onClick={this.hideCursor}
+      >
+        <div id="button" className={this.state.button} onClick={this.goFull}>
+          {'< >'}
         </div>
-      </Router>
-      <Ruler />
-    </div>
-  )
+        <Router>
+          <Fullscreen
+            enabled={this.state.isFull}
+            onChange={isFull => this.setState({ isFull })}
+          >
+            <Container />
+          </Fullscreen>
+        </Router>
+      </div>
+    )
+  }
 }
 
 export default App
