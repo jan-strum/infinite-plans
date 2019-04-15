@@ -6,37 +6,28 @@ import Container from './Container'
 
 class App extends React.Component {
   constructor(props) {
+    console.log('constructor')
     super(props)
     this.state = {
-      isFull: false,
-      button: 'hide',
-      cursor: 'none'
+      isFull: false
     }
   }
-
   goFull = () => {
     this.setState({ isFull: true })
   }
-  cursor = () => {
-    this.setState({ button: 'show', cursor: 'default' })
-    // clearTimeout(hide)
-    setTimeout(() => this.setState({ button: 'hide', cursor: 'none' }), 1000)
-    // setTimeout(() => this.setState({ cursor: 'none' }), 500)
-  }
-  hideCursor = () => {
-    console.log('hide cursor')
+  hideCursorOnClick = () => {
     this.setState({ cursor: 'none' })
   }
 
   render() {
+    console.log('render')
     return (
       <div
         id={this.state.cursor}
-        className={`App ${this.state.cursor}`}
-        onMouseMove={this.cursor}
-        onClick={this.hideCursor}
+        className={`App`}
+        onClick={this.hideCursorOnClick}
       >
-        <div id="button" className={this.state.button} onClick={this.goFull}>
+        <div id="button" onClick={this.goFull}>
           {'< >'}
         </div>
         <Router>
