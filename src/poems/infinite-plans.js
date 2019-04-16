@@ -10,8 +10,6 @@ export default class InfinitePlans extends React.Component {
   }
 
   handleClick = event => {
-    const id = event.target.id
-    console.log(event.target.id)
     this.setState({ cursor: 'none' })
   }
 
@@ -144,7 +142,6 @@ export default class InfinitePlans extends React.Component {
             id="chattering"
             className={`link ${this.state.cursor}`}
             to="/The-crowd-presses-me"
-            onClick={this.handleClick}
             onClick={this.handleClick}
           >
             I, chattering, animal,

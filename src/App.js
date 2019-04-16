@@ -6,35 +6,33 @@ import Container from './Container'
 
 class App extends React.Component {
   constructor(props) {
-    console.log('constructor')
     super(props)
     this.state = {
       isFull: false
     }
   }
   goFull = () => {
-    this.setState({ isFull: true })
+    this.setState({ isFull: !this.state.isFull })
   }
   hideCursorOnClick = () => {
     this.setState({ cursor: 'none' })
   }
 
   render() {
-    console.log('render')
     return (
       <div
         id={this.state.cursor}
         className={`App`}
         onClick={this.hideCursorOnClick}
       >
-        <div id="button" onClick={this.goFull}>
-          {'< >'}
-        </div>
         <Router>
           <Fullscreen
             enabled={this.state.isFull}
             onChange={isFull => this.setState({ isFull })}
           >
+            <div id="button" onClick={this.goFull}>
+              {!this.state.isFull ? '< >' : '> <'}
+            </div>
             <Container />
           </Fullscreen>
         </Router>

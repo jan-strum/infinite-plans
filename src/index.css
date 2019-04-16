@@ -26,9 +26,10 @@ span.hidden {
   right: 5px;
   border: none;
   font-size: 20px;
+  font-weight: 575;
   padding: 20px;
   color: lightgray;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   transition: 1000ms;
   transform: rotate(-45deg) scale(1, 1.5);
   z-index: 2;
