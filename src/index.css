@@ -10,11 +10,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: none;
-}
-
-div.ruler {
-  opacity: 0;
-  pointer-events: none;
+  white-space: nowrap;
 }
 
 span.hidden {
@@ -63,4 +59,26 @@ span.hidden {
 }
 .none {
   cursor: none;
+}
+
+@media (max-width: 800px) {
+  p,
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: normal;
+    line-height: 10.5px;
+  }
+  .You-must-have-regard > p,
+  .I-am-the-inheritor > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 250px;
+    max-height: 400px;
+    line-height: 20px !important;
+  }
 }
