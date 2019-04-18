@@ -13,6 +13,17 @@ html {
   white-space: nowrap;
 }
 
+.vertically-centered {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 span.hidden {
   visibility: hidden;
 }

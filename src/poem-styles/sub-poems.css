@@ -22,10 +22,11 @@ p.one {
 
 .a-continuous-flow-of-introductions {
   position: absolute;
-  left: 5%;
   top: 50%;
   transform: translateY(-50%);
-  padding-right: 20%;
+  width: 50vw;
+  height: 90vh;
+  padding: 5vh 45vw 5vh 5vw;
 }
 .a-continuous-flow-of-introductions > div.stanza {
   line-height: 0.85;
@@ -36,25 +37,30 @@ p.one {
 
 .The-crowd-presses-me {
   position: absolute;
-  width: 100vh;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 10% 10% 10% 10%;
+  width: 50vw;
+  height: 50vh;
+  padding: 25vh 25vw;
 }
 
 .I-laugh-at-my-fierce-guest {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 20% 20% 20% 5%;
+  width: 50vw;
+  height: 50vh;
+  padding: 25vh 45vw 25vh 5vw;
 }
 
 .Prestigious-ghosts {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 10% 20% 10% 5%;
+  width: 50vw;
+  height: 90vh;
+  padding: 5vh 45vw 5vh 5vw;
   line-height: 0.5;
 }
 
@@ -62,38 +68,46 @@ p.one {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 10% 60% 10% 5%;
+  width: 50vw;
+  height: 50vh;
+  padding: 25vh 45vw 25vh 5vw;
   line-height: 0.6;
 }
 
 .Hunters-behind-clouds {
   position: absolute;
-  padding: 5% 30% 30% 5%;
+  width: 50vw;
+  height: 50vh;
+  padding: 7vh 45vw 43vh 5vw;
 }
 
 .The-body-delighted {
   position: absolute;
   bottom: 0%;
-  padding: 20% 20% 5% 6%;
+  width: 50vw;
+  height: 55vh;
+  padding: 41vh 43vw 4vh 7vw;
   line-height: 0.6;
 }
 
 .Regent-of-Interregnum {
   position: absolute;
-  bottom: 10%;
-  transform: translateY(20%);
-  padding: 20% 20% 7% 5%;
+  bottom: 0%;
+  width: 50vw;
+  height: 40vh;
+  padding: 59vh 45vw 1vh 5vw;
   line-height: 0.6;
 }
 
 .I-am-the-inheritor {
   position: absolute;
-  width: 485px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 485px;
+  height: 50vh;
+  padding: 25vh calc(100vw - 970px);
   text-align: justify;
-  padding: 20%;
   white-space: normal;
 }
 
@@ -101,7 +115,9 @@ p.one {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 5% 70% 5% 5%;
+  width: 20vw;
+  height: 90vh;
+  padding: 5vh 75vw 5vh 5vw;
   line-height: 0.8;
 }
 
@@ -112,7 +128,7 @@ p.one {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 20%;
+  padding: calc(100vw - 440px);
   text-align: justify;
   white-space: normal;
 }
@@ -124,9 +140,11 @@ p.one {
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 100px;
-  row-gap: 20px;
-  padding: 5%;
+  column-gap: 8vw;
+  row-gap: 3vh;
+  width: 28vw;
+  height: 32vh;
+  padding: 32.5vh 33vw;
 }
 .By-itself-time > div.stanza {
   line-height: 0.5;
@@ -135,7 +153,9 @@ p.one {
 .scud-angel {
   position: absolute;
   right: 0%;
-  padding: 4% 6% 6% 30%;
+  width: 50vw;
+  height: 60vh;
+  padding: 7vh 6vw 33vh 46vw;
   text-align: right;
   line-height: 1;
 }
