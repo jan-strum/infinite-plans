@@ -19,8 +19,8 @@ const PictorialPreoccupations = ({ cursorVisibility }) => {
         <p>flashing its own</p>
         <p>disappearance</p>
         <p>into a clock</p>
-        <p>that could</p>
-        <p>not contain it.</p>
+        <p>that could not</p>
+        <p>contain it.</p>
         <br />
         <p>Unfit fragment</p>
         <p>complaining: an</p>
