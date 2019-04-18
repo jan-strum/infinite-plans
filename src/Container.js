@@ -21,7 +21,7 @@ import ScudAngel from './poems/scud-angel'
 import './poem-styles/infinite-plans.css'
 import './poem-styles/sub-poems.css'
 
-const Container = ({ location }) => {
+const Container = ({ location, cursorVisibility }) => {
   return (
     <Wrapper>
       <TransitionGroup className="transition-group">
@@ -40,38 +40,85 @@ const Container = ({ location }) => {
               <Route path="/infinite-plans" component={InfinitePlans} />
               <Route
                 path="/a-continuous-flow-of-introductions"
-                component={AContinuousFlowOfIntroductions}
+                render={() => (
+                  <AContinuousFlowOfIntroductions
+                    cursorVisibility={cursorVisibility}
+                  />
+                )}
               />
               <Route
                 path="/The-crowd-presses-me"
-                component={TheCrowdPressesMe}
+                render={() => (
+                  <TheCrowdPressesMe cursorVisibility={cursorVisibility} />
+                )}
               />
               <Route
                 path="/I-laugh-at-my-fierce-guest"
-                component={ILaughAtMyFierceGuest}
+                render={() => (
+                  <ILaughAtMyFierceGuest cursorVisibility={cursorVisibility} />
+                )}
               />
-              <Route path="/Prestigious-ghosts" component={PrestigiousGhosts} />
+              <Route
+                path="/Prestigious-ghosts"
+                render={() => (
+                  <PrestigiousGhosts cursorVisibility={cursorVisibility} />
+                )}
+              />
               <Route
                 path="/Pictorial-preoccupations"
-                component={PictorialPreoccupations}
+                render={() => (
+                  <PictorialPreoccupations
+                    cursorVisibility={cursorVisibility}
+                  />
+                )}
               />
               <Route
                 path="/Hunters-behind-clouds"
-                component={HuntersBehindCoulds}
+                render={() => (
+                  <HuntersBehindCoulds cursorVisibility={cursorVisibility} />
+                )}
               />
-              <Route path="/The-body-delighted" component={TheBodyDelighted} />
+              <Route
+                path="/The-body-delighted"
+                render={() => (
+                  <TheBodyDelighted cursorVisibility={cursorVisibility} />
+                )}
+              />
               <Route
                 path="/Regent-of-Interregnum"
-                component={RegentOfInterregnum}
+                render={() => (
+                  <RegentOfInterregnum cursorVisibility={cursorVisibility} />
+                )}
               />
-              <Route path="/I-am-the-inheritor" component={IAmTheInheritor} />
-              <Route path="/Parched-spirits" component={ParchedSpirits} />
+              <Route
+                path="/I-am-the-inheritor"
+                render={() => (
+                  <IAmTheInheritor cursorVisibility={cursorVisibility} />
+                )}
+              />
+              <Route
+                path="/Parched-spirits"
+                render={() => (
+                  <ParchedSpirits cursorVisibility={cursorVisibility} />
+                )}
+              />
               <Route
                 path="/You-must-have-regard"
-                component={YouMustHaveRegard}
+                render={() => (
+                  <YouMustHaveRegard cursorVisibility={cursorVisibility} />
+                )}
               />
-              <Route path="/By-itself-time" component={ByItselfTime} />
-              <Route path="/scud-angel" component={ScudAngel} />
+              />
+              <Route
+                path="/By-itself-time"
+                render={() => (
+                  <ByItselfTime cursorVisibility={cursorVisibility} />
+                )}
+              />
+              <Route
+                path="/scud-angel"
+                render={() => <ScudAngel cursorVisibility={cursorVisibility} />}
+              />
             </Switch>
           </section>
         </CSSTransition>

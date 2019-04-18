@@ -133,38 +133,3 @@ export function unregister() {
     })
   }
 }
-
-const filesToCache = [
-  '/',
-  'index.html',
-  'hide-show.js',
-  'App.js',
-  'Container.js',
-  'index.css',
-  'index.js',
-  'src/poem-styles/infinite-plans.css',
-  'src/poem-styles/sub-poems.css',
-  'src/poems/infinite-plans',
-  'src/poems/a-continuous-flow-of-introductions',
-  'src/poems/The-crowd-presses-me',
-  'src/poems/I-laugh-at-my-fierce-guest',
-  'src/poems/Prestigious-Ghosts',
-  'src/poems/Pictorial-preoccupations',
-  'src/poems/Hunters-behind-clouds',
-  'src/poems/The-body-delighted',
-  'src/poems/Regent-of-Interregnum',
-  'src/poems/I-am-the-inheritor',
-  'src/poems/Parched-spirits',
-  'src/poems/You-must-have-regard'
-]
-
-const staticCacheName = 'pages-cache-v1'
-
-window.addEventListener('install', event => {
-  console.log('Attempting to install service worker and cache static assets')
-  event.waitUntil(
-    caches.open(staticCacheName).then(cache => {
-      return cache.addAll(filesToCache)
-    })
-  )
-})

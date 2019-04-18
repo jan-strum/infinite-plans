@@ -13,6 +13,17 @@ html {
   white-space: nowrap;
 }
 
+.vertically-centered {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 span.hidden {
   visibility: hidden;
 }
@@ -40,6 +51,8 @@ span.hidden {
   border: none;
   outline: none;
 }
+
+/* Fullscreen Button Visibility: */
 .display {
   opacity: 1;
 }
@@ -47,18 +60,16 @@ span.hidden {
   opacity: 0;
 }
 
-*:fullscreen {
-  background: #fff;
-}
-
-#cursor {
-  cursor: none;
-}
+/* Cursor Visibility: */
 .default {
   cursor: default;
 }
 .none {
   cursor: none;
+}
+
+*:fullscreen {
+  background: #fff;
 }
 
 @media (max-width: 800px) {

@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const TheBodyDelighted = () => {
+const TheBodyDelighted = ({ cursorVisibility }) => {
   return (
-    <Link className="The-body-delighted link none" to="infinite-plans">
+    <Link
+      id={cursorVisibility}
+      className="The-body-delighted link none"
+      to="infinite-plans"
+    >
       <p>The body, delighted by being unlocatable, exhaling</p>
       <p className="half">
         {' '}
