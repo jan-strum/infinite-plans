@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const ByItselfTime = () => {
+const ByItselfTime = ({ cursorVisibility }) => {
   return (
-    <Link className="By-itself-time link none" to="/infinite-plans">
+    <Link
+      id={cursorVisibility}
+      className="By-itself-time link none"
+      to="/infinite-plans"
+    >
       <div className="stanza">
         <p>By itself, time</p>
         <p>cannot conceive</p>

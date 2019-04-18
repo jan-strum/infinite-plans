@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const ParchedSpirits = () => {
+const ParchedSpirits = ({ cursorVisibility }) => {
   return (
-    <Link className="Parched-spirits link none" to="/infinite-plans">
+    <Link
+      id={cursorVisibility}
+      className="Parched-spirits link none"
+      to="/infinite-plans"
+    >
       <p>Parched spirits inhale them-</p>
       <p>selves for the sake</p>
       <p>of language.</p>

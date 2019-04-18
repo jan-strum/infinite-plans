@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const ScudAngel = () => {
+const ScudAngel = ({ cursorVisibility }) => {
   return (
-    <Link className="scud-angel link none" to="/infinite-plans">
+    <Link
+      id={cursorVisibility}
+      className="scud-angel link none"
+      to="/infinite-plans"
+    >
       <p>scud angel spit purpoil from churchly mother’s functionary</p>
       <p>
         ablution{' '}

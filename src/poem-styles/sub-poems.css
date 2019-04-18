@@ -1,3 +1,4 @@
+/* Indentation: */
 p.quarter {
   text-indent: 0.25in;
 }
@@ -9,6 +10,14 @@ p.three-quarters {
 }
 p.one {
   text-indent: 1in;
+}
+
+/* Cursor Visibility: */
+#default {
+  cursor: default;
+}
+#one {
+  cursor: none;
 }
 
 .a-continuous-flow-of-introductions {

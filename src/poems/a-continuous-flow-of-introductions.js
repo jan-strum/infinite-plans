@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const AContinuousFlowOfIntroductions = () => {
+const AContinuousFlowOfIntroductions = ({ cursorVisibility }) => {
   return (
     <Link
-      className="a-continuous-flow-of-introductions link none"
+      id={cursorVisibility}
+      className={`a-continuous-flow-of-introductions link none`}
       to="/infinite-plans"
     >
       <div className="stanza">

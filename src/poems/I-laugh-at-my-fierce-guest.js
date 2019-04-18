@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const ILaughAtMyFierceGuest = () => {
+const ILaughAtMyFierceGuest = ({ cursorVisibility }) => {
   return (
-    <Link className="I-laugh-at-my-fierce-guest link none" to="infinite-plans">
+    <Link
+      id={cursorVisibility}
+      className="I-laugh-at-my-fierce-guest link none"
+      to="infinite-plans"
+    >
       <p>
         I laugh at my fierce guest. He squints around modestly, as if on a
         stranger's property.

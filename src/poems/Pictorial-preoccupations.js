@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const PictorialPreoccupations = () => {
+const PictorialPreoccupations = ({ cursorVisibility }) => {
   return (
-    <Link className="Pictorial-preoccupations link none" to="/infinite-plans">
+    <Link
+      id={cursorVisibility}
+      className="Pictorial-preoccupations link none"
+      to="/infinite-plans"
+    >
       <p>Pictorial preoccupations</p>
       <p>cannot explain</p>
       <p>other surrogates</p>

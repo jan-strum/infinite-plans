@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const HuntersBehindClouds = () => {
+const HuntersBehindClouds = ({ cursorVisibility }) => {
   return (
-    <Link className="Hunters-behind-clouds link none" to="infinite-plans">
+    <Link
+      id={cursorVisibility}
+      className="Hunters-behind-clouds link none"
+      to="infinite-plans"
+    >
       <p>Hunters behind clouds</p>
       <p>track unknown fevers</p>
       <p>

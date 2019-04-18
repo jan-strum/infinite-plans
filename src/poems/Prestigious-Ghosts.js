@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const PrestigiousGhosts = () => {
+const PrestigiousGhosts = ({ cursorVisibility }) => {
   return (
-    <Link className="Prestigious-ghosts link none" to="/infinite-plans">
+    <Link
+      id={cursorVisibility}
+      className="Prestigious-ghosts link none"
+      to="/infinite-plans"
+    >
       <p>
         Prestigious ghosts. Partisans of a certain future. Its cheap products,
       </p>

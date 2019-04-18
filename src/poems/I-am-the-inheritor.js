@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const IAmTheInheritor = () => {
+const IAmTheInheritor = ({ cursorVisibility }) => {
   return (
-    <Link className="I-am-the-inheritor link none" to="/infinite-plans">
+    <Link
+      id={cursorVisibility}
+      className="I-am-the-inheritor link none"
+      to="/infinite-plans"
+    >
       <p>
         I am the inheritor, but first must come to swear before the ghost.
         Screaming the secrets of immobile life, I find him surviving his own
