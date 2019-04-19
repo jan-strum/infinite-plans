@@ -41,7 +41,7 @@ export default class InfinitePlans extends React.Component {
               to="/By-itself-time"
               onClick={this.handleClick}
             >
-              thunders in the index
+              thunder in the index
             </Link>
           </p>
           <p>

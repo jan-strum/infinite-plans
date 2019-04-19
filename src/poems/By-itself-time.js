@@ -20,7 +20,7 @@ const ByItselfTime = ({ cursorVisibility }) => {
         <p>This physic</p>
         <p>but prolongs</p>
         <p>your sickly days</p>
-        <p>thunders in the index.</p>
+        <p>thunder in the index.</p>
       </div>
       <div className="stanza">
         <p>Heaven’s face does glow</p>
