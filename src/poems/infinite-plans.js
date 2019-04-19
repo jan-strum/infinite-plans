@@ -15,7 +15,9 @@ export default class InfinitePlans extends React.Component {
     const elem = ReactDOM.findDOMNode(this)
     elem.style.opacity = 0
     window.requestAnimationFrame(function() {
-      elem.style.transition = 'opacity 5500ms'
+      elem.style.transition = '5500ms'
+      elem.style.transitionDelay = 'opacity 2500ms'
+      elem.style.transitionTimingFunction = 'ease-in'
       elem.style.opacity = 1
     })
   }
