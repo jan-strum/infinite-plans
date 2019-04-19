@@ -1,4 +1,6 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
+
 import { Link } from 'react-router-dom'
 
 export default class InfinitePlans extends React.Component {
@@ -9,7 +11,16 @@ export default class InfinitePlans extends React.Component {
     }
   }
 
-  handleClick = event => {
+  componentDidMount() {
+    const elem = ReactDOM.findDOMNode(this)
+    elem.style.opacity = 0
+    window.requestAnimationFrame(function() {
+      elem.style.transition = 'opacity 5500ms'
+      elem.style.opacity = 1
+    })
+  }
+
+  handleClick = () => {
     this.setState({ cursor: 'none' })
   }
 
