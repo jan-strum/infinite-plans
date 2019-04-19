@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom'
 
 const IAmTheInheritor = ({ cursorVisibility }) => {
   return (
-    <Link
-      id={cursorVisibility}
-      className="I-am-the-inheritor link none"
-      to="/infinite-plans"
-    >
+    <Link id={cursorVisibility} className="I-am-the-inheritor link none" to="/">
       <div className="vertically-centered">
         <p>
           I am the inheritor, but first must come to swear before the ghost.

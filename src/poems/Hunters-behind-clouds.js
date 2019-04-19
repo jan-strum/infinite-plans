@@ -6,7 +6,7 @@ const HuntersBehindClouds = ({ cursorVisibility }) => {
     <Link
       id={cursorVisibility}
       className="Hunters-behind-clouds link none"
-      to="infinite-plans"
+      to="/"
     >
       <p>Hunters behind clouds</p>
       <p>track unknown fevers</p>

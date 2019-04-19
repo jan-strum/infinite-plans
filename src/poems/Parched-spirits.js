@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ParchedSpirits = ({ cursorVisibility }) => {
   return (
-    <Link
-      id={cursorVisibility}
-      className="Parched-spirits link none"
-      to="/infinite-plans"
-    >
+    <Link id={cursorVisibility} className="Parched-spirits link none" to="/">
       <div className="vertically-centered">
         <p>Parched spirits inhale them-</p>
         <p>selves for the sake</p>

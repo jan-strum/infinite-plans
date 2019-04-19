@@ -6,7 +6,7 @@ const PictorialPreoccupations = ({ cursorVisibility }) => {
     <Link
       id={cursorVisibility}
       className="Pictorial-preoccupations link none"
-      to="/infinite-plans"
+      to="/"
     >
       <div className="vertically-centered">
         <p>Pictorial preoccupations</p>

@@ -6,7 +6,7 @@ const RegentOfInterregnum = ({ cursorVisibility }) => {
     <Link
       id={cursorVisibility}
       className="Regent-of-Interregnum link none"
-      to="/infinite-plans"
+      to="/"
     >
       <p>Regent of Interregnum addresses samely disparate hands.</p>
       <p>They point to supermarkets full of fruit and nuts</p>

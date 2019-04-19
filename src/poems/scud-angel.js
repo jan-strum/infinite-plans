@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ScudAngel = ({ cursorVisibility }) => {
   return (
-    <Link
-      id={cursorVisibility}
-      className="scud-angel link none"
-      to="/infinite-plans"
-    >
+    <Link id={cursorVisibility} className="scud-angel link none" to="/">
       <p>scud angel spit purpoil from churchly mother’s functionary</p>
       <p>
         ablution{' '}

@@ -6,7 +6,7 @@ const ILaughAtMyFierceGuest = ({ cursorVisibility }) => {
     <Link
       id={cursorVisibility}
       className="I-laugh-at-my-fierce-guest link none"
-      to="infinite-plans"
+      to="/"
     >
       <div className="vertically-centered">
         <p>

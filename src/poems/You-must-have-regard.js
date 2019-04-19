@@ -6,7 +6,7 @@ const YouMustHaveRegard = ({ cursorVisibility }) => {
     <Link
       id={cursorVisibility}
       className="You-must-have-regard link none"
-      to="/infinite-plans"
+      to="/"
     >
       <p>
         You must have regard for my miserable shoes, which could protect your

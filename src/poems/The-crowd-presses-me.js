@@ -6,7 +6,7 @@ const TheCrowdPressesMe = ({ cursorVisibility }) => {
     <Link
       id={cursorVisibility}
       className="The-crowd-presses-me link none"
-      to="/infinite-plans"
+      to="/"
     >
       <div className="vertically-centered">
         <p>The crowd presses me toward big</p>

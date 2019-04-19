@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom'
 
 const PrestigiousGhosts = ({ cursorVisibility }) => {
   return (
-    <Link
-      id={cursorVisibility}
-      className="Prestigious-ghosts link none"
-      to="/infinite-plans"
-    >
+    <Link id={cursorVisibility} className="Prestigious-ghosts link none" to="/">
       <div className="vertically-centered">
         <p>
           Prestigious ghosts. Partisans of a certain future. Its cheap products,

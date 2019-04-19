@@ -23,7 +23,7 @@ class App extends React.Component {
     this.timer = setTimeout(
       () =>
         this.setState({ cursorVisibility: 'none', buttonVisibility: 'hide' }),
-      1000
+      500
     )
   }
   goFull = () => {

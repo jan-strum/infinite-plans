@@ -32,12 +32,7 @@ const Container = ({ location, cursorVisibility }) => {
         >
           <section className="route-section">
             <Switch location={location}>
-              <Route
-                exact
-                path="/"
-                render={() => <Redirect to="/infinite-plans" />}
-              />
-              <Route path="/infinite-plans" component={InfinitePlans} />
+              <Route exact path="/" component={InfinitePlans} />
               <Route
                 path="/a-continuous-flow-of-introductions"
                 render={() => (

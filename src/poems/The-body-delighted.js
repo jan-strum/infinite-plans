@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom'
 
 const TheBodyDelighted = ({ cursorVisibility }) => {
   return (
-    <Link
-      id={cursorVisibility}
-      className="The-body-delighted link none"
-      to="infinite-plans"
-    >
+    <Link id={cursorVisibility} className="The-body-delighted link none" to="">
       <p>The body, delighted by being unlocatable, exhaling</p>
       <p className="half">
         {' '}

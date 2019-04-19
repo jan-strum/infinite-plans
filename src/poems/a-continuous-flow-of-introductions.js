@@ -6,7 +6,7 @@ const AContinuousFlowOfIntroductions = ({ cursorVisibility }) => {
     <Link
       id={cursorVisibility}
       className={`a-continuous-flow-of-introductions link none`}
-      to="/infinite-plans"
+      to="/"
     >
       <div className="vertically-centered">
         <div className="stanza">
