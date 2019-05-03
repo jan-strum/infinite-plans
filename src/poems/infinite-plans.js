@@ -33,7 +33,7 @@ export default class InfinitePlans extends React.Component {
           <p>
             <span className="hidden">
               I, chattering animal, spit purpoil—smiley to feel stupid Screaming
-              the secrets of Myth-sized crust of.{' '}
+              the secrets of Myth-sized crust of{' '}
             </span>
             <Link
               id="thunders"
