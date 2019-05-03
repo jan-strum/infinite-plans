@@ -61,7 +61,7 @@ export default class InfinitePlans extends React.Component {
           <p>
             <span className="hidden">
               I, chattering animal, spit purpoil—smiley to feel stupid Screaming
-              the secrets of{' '}
+              the secrets of.{' '}
             </span>
             <Link
               id="myth"
@@ -186,7 +186,7 @@ export default class InfinitePlans extends React.Component {
             </Link>
           </p>
           <p>
-            <span className="hidden">I, chattering animal, laugh at my</span>
+            <span className="hidden">I, chattering animal, laugh at my..</span>
             <Link
               id="slow-thighs"
               className="link"
@@ -198,7 +198,7 @@ export default class InfinitePlans extends React.Component {
           </p>
           <p>
             <span className="hidden">
-              I, chattering animal, laugh at my fierce guest
+              I, chattering animal, laugh at my fierce guest..
             </span>
             <Link
               id="would-prefer"
@@ -211,7 +211,7 @@ export default class InfinitePlans extends React.Component {
           </p>
           <p>
             <span className="hidden">
-              I, chattering animal, laugh at my slow th
+              I, chattering animal, laugh at my slow th..
             </span>
             <Link
               id="than-to-torment"
@@ -224,7 +224,7 @@ export default class InfinitePlans extends React.Component {
           </p>
           <p>
             <span className="hidden">
-              I, chattering animal, laugh at my slow thighs would{' '}
+              I, chattering animal, laugh at my slow thighs would..{' '}
             </span>
             <Link
               id="appease"
