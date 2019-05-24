@@ -10,8 +10,9 @@ class App extends React.Component {
     this.state = {
       isFull: false,
       invert: false,
+      button: 'hide',
       cursorVisibility: 'none',
-      button: 'hide'
+      isHovering: false
     }
     this.timer = null
   }
@@ -21,11 +22,19 @@ class App extends React.Component {
   onMouseMove = () => {
     this.setState({ cursorVisibility: 'default', buttonVisibility: 'display' })
     if (this.timer) clearTimeout(this.timer)
-    this.timer = setTimeout(
-      () =>
-        this.setState({ cursorVisibility: 'none', buttonVisibility: 'hide' }),
-      500
-    )
+    if (!this.state.isHovering) {
+      this.timer = setTimeout(
+        () =>
+          this.setState({ cursorVisibility: 'none', buttonVisibility: 'hide' }),
+        500
+      )
+    }
+  }
+  onMouseOver = () => {
+    this.setState({ isHovering: true })
+  }
+  onMouseLeave = () => {
+    this.setState({ isHovering: false })
   }
   goFull = () => {
     this.setState({ isFull: !this.state.isFull })
@@ -47,6 +56,8 @@ class App extends React.Component {
             <div
               id='button'
               className={this.state.buttonVisibility}
+              onMouseOver={this.onMouseOver}
+              onMouseLeave={this.onMouseLeave}
               onClick={this.goFull}
             >
               {!this.state.invert ? '< >' : '> <'}
