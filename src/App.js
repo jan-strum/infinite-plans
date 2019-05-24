@@ -9,6 +9,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       isFull: false,
+      invert: false,
       cursorVisibility: 'none',
       button: 'hide'
     }
@@ -28,6 +29,7 @@ class App extends React.Component {
   }
   goFull = () => {
     this.setState({ isFull: !this.state.isFull })
+    setTimeout(() => this.setState({ invert: !this.state.invert }), 100)
   }
 
   render() {
@@ -43,11 +45,11 @@ class App extends React.Component {
             onChange={isFull => this.setState({ isFull })}
           >
             <div
-              id="button"
+              id='button'
               className={this.state.buttonVisibility}
               onClick={this.goFull}
             >
-              {!this.state.isFull ? '< >' : '> <'}
+              {!this.state.invert ? '< >' : '> <'}
             </div>
             <Container
               cursorVisibility={this.state.cursorVisibility}
