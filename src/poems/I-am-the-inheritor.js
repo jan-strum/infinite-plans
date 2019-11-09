@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const IAmTheInheritor = ({ cursorVisibility }) => {
   return (
-    <Link id={cursorVisibility} className="I-am-the-inheritor link none" to="/">
-      <div className="vertically-centered">
+    <Link id={cursorVisibility} className='I-am-the-inheritor link none' to='/'>
+      <div className='vertically-centered'>
         <p>
           I am the inheritor, but first must come to swear before the ghost.
           Screaming the secrets of immobile life, I find him surviving his own
@@ -13,9 +13,9 @@ const IAmTheInheritor = ({ cursorVisibility }) => {
           costs, like the nothing-box, and those who are spacious in the
           possession of dirt. I knock my head against a wall and he trickles
           down. He passes me by, crawling to the cross reading “Martyr’s
-          Provisions,” coming close to my rhetoric. We understand, then—do we
-          not? Who knows? But I am enjoying this, and today it belongs to the
-          cult of our relation and its preparatory silence.
+          Provisions,” coming caressingly close to my rhetoric. We understand,
+          then—do we not? Who knows? But I am enjoying myself, and today it
+          belongs to the cult of our relation, and to its preparatory silence.
         </p>
       </div>
     </Link>
