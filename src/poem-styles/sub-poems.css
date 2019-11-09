@@ -52,6 +52,7 @@ p.one {
   width: 50vw;
   height: 50vh;
   padding: 25vh 45vw 25vh 5vw;
+  line-height: 10px;
 }
 
 .Prestigious-ghosts {
