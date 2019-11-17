@@ -1,4 +1,4 @@
 {
-  "extends": "fullstack",
+  "extends": "airbnb",
   "root": true
 }
