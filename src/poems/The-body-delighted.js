@@ -14,7 +14,9 @@ const TheBodyDelighted = ({ cursorVisibility }) => {
       </p>
       <br />
       <p>Retreats of a skirt and herself-instituting a place.</p>
-      <p className='half'>All distractions from life pulled in, communicated</p>
+      <p className='half'>
+        All distractions from life, pulled in, communicated
+      </p>
       <p className='half'>
         to impersonal, eurythmic surfaces of steamy semi-nudes.
       </p>
