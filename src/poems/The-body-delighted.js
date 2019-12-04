@@ -9,7 +9,7 @@ const TheBodyDelighted = ({ cursorVisibility }) => {
         {' '}
         from behind the flow of a veil, acquired for itself
       </p>
-      <p className='one'>
+      <p className='half'>
         the virginity of a foreign site displayed under a fermata.
       </p>
       <br />
@@ -18,7 +18,7 @@ const TheBodyDelighted = ({ cursorVisibility }) => {
       <br />
       <p>Retreats of a skirt and herself instituting a place.</p>
       <p className='half'>All distractions from life pulled in, communicated</p>
-      <p className='one'>
+      <p className='half'>
         to impersonal, eurythmic surfaces of steamy semi-nudes.
       </p>
       <br />
