@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 const ScudAngel = ({ cursorVisibility }) => {
   return (
-    <Link id={cursorVisibility} className="scud-angel link none" to="/">
+    <Link id={cursorVisibility} className='scud-angel link none' to='/'>
       <p>scud angel spit purpoil from churchly mother’s functionary</p>
       <p>
         ablution{' '}
-        <span className="hidden">
+        <span className='hidden'>
           {' '}
           ......stil stic to her pubic departure from no wor by
         </span>
@@ -15,12 +15,12 @@ const ScudAngel = ({ cursorVisibility }) => {
       <p>still sticks to her pubic departure from no word by</p>
       <p>
         way of mythos at [5:35pm]
-        <span className="hidden">pubic departure from no word by</span>
+        <span className='hidden'>pubic departure from no word by</span>
       </p>
       <p>lemures vanish so as to preserve</p>
       <p>altærs of inhibition—something she termed The Shimmer . that</p>
-      <p className="top-margin">
-        her indigible mm can only speak to language limited by a thousand little
+      <p className='top-margin'>
+        her indigible mm could only speak language limited by a thousand little
         lords
       </p>
       <p>
@@ -28,40 +28,40 @@ const ScudAngel = ({ cursorVisibility }) => {
       </p>
       <p>
         hand pawned skin loned analogies
-        <span className="hidden"> sundered half priestly</span>
+        <span className='hidden'> sundered half priestly</span>
       </p>
       <p>sundered half priestly</p>
       <p>
         {' '}
-        is realization: we could no longer understand her; she gave up
+        is realization: We could no longer understand her; she gave up
         altogether
       </p>
-      <p className="top-margin">
+      <p className='top-margin'>
         the attempt to speak
-        <span className="hidden">
+        <span className='hidden'>
           deferred to desire discovering how paralyzed she was
         </span>
       </p>
       <p>deferred to desire discovering how paralyzed she was</p>
       <p>
-        and<span className="hidden"> Her mistake .</span>lie perfectly
-        <span className="hidden">.....</span> still.
-        <span className="hidden">
+        and<span className='hidden'> Her mistake .</span>lie perfectly
+        <span className='hidden'>.....</span> still.
+        <span className='hidden'>
           {' '}
           ithe use of the presentense e oft e pr esentense...
         </span>
       </p>
-      <p className="top-margin">
-        <span className="hidden"> an</span>Her mistake lay–lonely–
-        <span className="hidden">................</span>in the use of the
+      <p className='top-margin'>
+        <span className='hidden'> an</span>Her mistake lay–lonely–
+        <span className='hidden'>................</span>in the use of the
         presentense
-        <span className="hidden"> oft e pr esentense</span>
+        <span className='hidden'> oft e pr esentense</span>
       </p>
       <p>
         refuse
-        <span className="hidden">..........</span>
+        <span className='hidden'>..........</span>
         resurrection
-        <span className="hidden">............................</span>
+        <span className='hidden'>............................</span>
       </p>
     </Link>
   )

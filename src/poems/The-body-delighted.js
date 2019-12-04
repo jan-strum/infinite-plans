@@ -22,13 +22,14 @@ const TheBodyDelighted = ({ cursorVisibility }) => {
       </p>
       <br />
       <p>Guts, no sooner scattered, spring forth</p>
+      <p className='half'>incidentally sovereign</p>
       <p className='half'>—blown from where?</p>
       <br />
       <p>Chastity is a qualifier—being split open—</p>
       <p className='half'>relieved of the weight of its flesh.</p>
       <br />
-      <p>The formula of self-coronation masks</p>
-      <p className='half'>the marginal exorbitance of a relational act.</p>
+      <p>The formula of self-coronation masks the marginal</p>
+      <p className='half'>exorbitance of a relational act.</p>
       <br />
       <p>Myth-sized life folds into doctrine,</p>
       <p className='half'>laid on the bed of sebum silks.</p>
