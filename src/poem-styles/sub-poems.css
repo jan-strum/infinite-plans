@@ -28,10 +28,10 @@ p.one {
   height: 90vh;
   padding: 5vh 45vw 5vh 5vw;
 }
-.a-continuous-flow-of-introductions > div.stanza {
-  line-height: 0.85;
+.a-continuous-flow-of-introductions div.stanza {
+  line-height: 0.9;
 }
-.a-continuous-flow-of-introductions > div.top-margin {
+.a-continuous-flow-of-introductions div.top-margin {
   margin-top: 28px;
 }
 
