@@ -5,7 +5,7 @@ const ParchedSpirits = ({ cursorVisibility }) => {
   return (
     <Link id={cursorVisibility} className='Parched-spirits link none' to='/'>
       <div className='vertically-centered'>
-        <p>Parched spirits inhale themselves for the sake of language</p>
+        <p>Parched spirits inhale themselves for the sake of language.</p>
         <p>Dislocated life dwells in me as motion.</p>
         <br />
         <p>It psychologizes world</p>
